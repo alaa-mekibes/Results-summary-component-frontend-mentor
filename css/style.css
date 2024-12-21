@@ -99,7 +99,7 @@ main {
                 border-bottom-right-radius: 30px
         }
 }
-.box-left h3 {
+.box-left h1 {
         font-size: 19px;
         color: var(--Light-lavender);
         font-weight: 700
@@ -138,7 +138,7 @@ main {
         margin: 2px auto;
         width: 75%
 }
-.box-left .text h4 {
+.box-left .text span {
         font-size: 25px;
         font-weight: 800;
         color: var(--White)
@@ -157,7 +157,7 @@ main {
         padding: var(--padding-box);
         flex-basis: 50%
 }
-.box-right h3 {
+.box-right h2 {
         font-size: 19px;
         color: var(--Dark-gray-blue);
         margin-bottom: 30px
