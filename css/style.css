@@ -230,7 +230,8 @@ main {
         padding: 15px;
         border-radius: 30px;
         transition: .5s;
-        background-color: var(--Dark-gray-blue)
+        background-color: var(--Dark-gray-blue);
+        margin-top: 35px
 }
 .box-right a:hover {
         background-color: var(--Light-royal-blue-background)
