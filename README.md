@@ -28,7 +28,7 @@ This project involves creating an interactive interface with the following requi
 
 ### Links
 
-- Live Site URL: [click here](https://alaa-mekibes.github.io/Results-summary-component/)
+- Live Site URL: [click here](https://alaa-mekibes.github.io/Results-summary-component-frontend-mentor)
 
 ## My process
 
