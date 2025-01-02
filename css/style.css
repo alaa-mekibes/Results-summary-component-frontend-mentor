@@ -216,7 +216,8 @@ main {
 }
 .box-right ul li::after {
         content: ' / 100';
-        color: var(--Light-lavender);
+        --AfterColor: hsla(224, 30%, 27%, 0.6);
+        color: var(--AfterColor);
         position: absolute;
         right: 15px
 }
