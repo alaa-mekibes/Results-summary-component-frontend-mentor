@@ -28,6 +28,8 @@ This project involves creating an interactive interface with the following requi
 
 ### Links
 
+- Solution link : https://www.frontendmentor.io/solutions/results-summary-component-vjvP4_FrgU
+  
 - Live Site URL: [click here](https://alaa-mekibes.github.io/Results-summary-component-frontend-mentor)
 
 ## My process
