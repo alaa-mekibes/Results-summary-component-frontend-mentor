@@ -193,28 +193,27 @@ body {
         right: 15px
 }
 .box-right button {
-        display: block;
-        all: unset;
-        color: var(--White);
-        font-size: 1.25rem;
-        font-weight: 700;
-        text-align: center;
-        padding: 0.938rem;
-        border-radius: var(--border-r);
-        transition: .5s;
-        background-color: var(--Dark-gray-blue);
-        width: 100%;
-        max-width: 100%;
-        align-self: stretch;
-        margin-block-start: 1.875rem;
-      &:hover {
-        background-color: var(--Light-royal-blue-background);
+    display: block;
+    all: unset;
+    color: var(--White);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.938rem;
+    border-radius: var(--border-r);
+    transition: .5s;
+    background-color: var(--Dark-gray-blue);
+    width: 90%;
+    margin-block-start: 1.875rem;
+}
+.box-right button:hover {
+    background-color: var(--Light-royal-blue-background);
 }
 
 @media (min-width: 48rem) {
-        .box {flex-direction: row}
-        .box-left {border-radius: var(--border-r)}
-        .box-right {border-radius: var(--border-r)}
-        .box-right ul li {padding: 0.938rem 2.5rem}
-        .box-right button {margin-block-start: 2.188rem}
+    .box {flex-direction: row}
+    .box-left {border-radius: var(--border-r)}
+    .box-right {border-radius: var(--border-r)}
+    .box-right ul li {padding: 0.938rem 2.5rem}
+    .box-right button {margin-block-start: 2.188rem}
 }
