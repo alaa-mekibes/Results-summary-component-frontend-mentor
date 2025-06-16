@@ -203,7 +203,8 @@ body {
         border-radius: var(--border-r);
         transition: .5s;
         background-color: var(--Dark-gray-blue);
-        width: auto;
+        width: 100%;
+        max-width: 100%;
         align-self: stretch;
         margin-block-start: 1.875rem;
       &:hover {
