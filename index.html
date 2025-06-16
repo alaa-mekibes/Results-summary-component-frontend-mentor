@@ -4,13 +4,13 @@
         <meta charset="UTF-8">
         <title>Results summary component</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" href="images/favicon-32x32.png">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <main>
-                <div class="box">
-                    <div class="box-left">
+                <section aria-label="result and summary box container" class="box">
+                    <article class="box-left">
                         <h1>Your Result</h1>
                         <div class="score">
                             <span>76</span>
@@ -21,8 +21,8 @@
                                 the people who have taken
                                 these tests</p>
                         </div>
-                    </div>
-                    <div class="box-right">
+                    </article>
+                    <article class="box-right">
                         <h2>summary</h2>
                         <ul>
                             <li data-text="80"><img src="images/icon-reaction.svg" alt="reaction icon">reaction</li>
@@ -30,9 +30,9 @@
                             <li data-text="61"><img src="images/icon-verbal.svg" alt="verbal icon">verbal</li>
                             <li data-text="72"><img src="images/icon-visual.svg" alt="visual icon">visual</li>
                         </ul>
-                        <a href="#continue">continue</a>
-                    </div>
-                </div>
+                        <button type="button">continue</button>
+                    </article>
+                </section>
         </main>
     </body>
 </html>
