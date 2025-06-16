@@ -203,10 +203,11 @@ body {
         border-radius: var(--border-r);
         transition: .5s;
         background-color: var(--Dark-gray-blue);
-        margin-block-start: 1.875rem
-}
-.box-right button:hover {
-        background-color: var(--Light-royal-blue-background)
+        width: 100%;
+        text-align: center;
+        margin-block-start: 1.875rem;
+      &:hover {
+        background-color: var(--Light-royal-blue-background);
 }
 
 @media (min-width: 48rem) {
