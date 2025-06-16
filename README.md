@@ -20,7 +20,6 @@ This project involves creating an interactive interface with the following requi
 
 - **Responsive Design**: Ensure that the layout adapts seamlessly to different screen sizes, providing an optimal experience on any device (e.g., mobile, tablet, or desktop).
 - **Interactive Elements**: Implement hover and focus states for all interactive components (such as buttons, links, or inputs) to enhance usability and accessibility.
-- **Bonus Task**: Dynamically load and display content on the page using local JSON data, adding flexibility and interactivity to the application.
 
 ### Screenshot
 
@@ -28,9 +27,9 @@ This project involves creating an interactive interface with the following requi
 
 ### Links
 
-- Solution link : [click here](https://www.frontendmentor.io/solutions/results-summary-component-vjvP4_FrgU)
+- [Solution link](https://www.frontendmentor.io/solutions/results-summary-component-vjvP4_FrgU)
   
-- Live Site URL : [click here](https://alaa-mekibes.github.io/Results-summary-component-frontend-mentor)
+- [Live Site URL](https://alaa-mekibes.github.io/Results-summary-component-frontend-mentor)
 
 ## My process
 
@@ -40,6 +39,7 @@ This project involves creating an interactive interface with the following requi
 - CSS custom properties
 - Flexbox
 - Media query
+- Mobile First
 
 ## Author
 
