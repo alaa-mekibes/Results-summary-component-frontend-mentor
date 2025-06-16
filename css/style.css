@@ -46,7 +46,7 @@
 }      
 body {   
         font-family: 'Hanken Grotesk', sans-serif;
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center
@@ -129,7 +129,7 @@ body {
 /* Start Right Box */
 .box-right {
         background-color: var(--White);
-        border-radius: var(--border-r);;
+        border-radius: 0px;
         padding: var(--padding-box);
         flex-basis: 50%
 }
@@ -192,9 +192,9 @@ body {
         position: absolute;
         right: 15px
 }
-.box-right a {
+.box-right button {
         display: block;
-        text-decoration: none;
+        all: unset;
         color: var(--White);
         font-size: 1.25rem;
         font-weight: 700;
@@ -205,13 +205,14 @@ body {
         background-color: var(--Dark-gray-blue);
         margin-block-start: 1.875rem
 }
-.box-right a:hover {
+.box-right button:hover {
         background-color: var(--Light-royal-blue-background)
 }
 
 @media (min-width: 48rem) {
         .box {flex-direction: row}
         .box-left {border-radius: var(--border-r)}
+        .box-right {border-radius: var(--border-r)}
         .box-right ul li {padding: 0.938rem 2.5rem}
-        .box-right a {margin-block-start: 2.188rem}
+        .box-right button {margin-block-start: 2.188rem}
 }
