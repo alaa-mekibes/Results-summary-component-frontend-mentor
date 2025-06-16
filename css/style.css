@@ -1,14 +1,8 @@
-/* Start Variables*/
-    /* Colors */
-
-        /* Primary  */
 :root {
 --Light-red: hsl(0, 100%, 67%);
 --Orangey-yellow: hsl(39, 100%, 56%);
 --Green-teal: hsl(166, 100%, 37%);
 --Cobalt-blue: hsl(234, 85%, 45%);
-
-        /* Gradients  */
 
 --Light-slate-blue-background: hsl(252, 100%, 67%);
 --Light-royal-blue-background: hsl(241, 81%, 54%);
@@ -16,21 +10,17 @@
 --Violet-blue-circle: hsla(256, 72%, 46%, 1);
 --Persian-blue-circle: hsla(241, 72%, 46%, 0);
 
-        /* Neutral */
 --White: hsl(0, 0%, 100%);
 --Pale-blue: hsl(221, 100%, 96%);
 --Light-lavender: hsl(241, 100%, 89%);
 --Dark-gray-blue: hsl(224, 30%, 27%);
 
+--size: 1.125rem;
+--heading-size: 1.188rem;
+--padding-box: 2.5rem 1.563rem;
+--border-r: 30px;
 
-        /* Paragraph */
---size: 18px;
-
-        /* Others */
---padding-box: 40px 25px;
 }
-/* End Variables*/
-
 /* Start Global Rules */
 
 * {
@@ -41,67 +31,52 @@
         /* Fonts */
 @font-face {
         font-family: 'Hanken Grotesk';
-        src: url(fonts/static/HankenGrotesk-Bold.ttf) format(truetype);
+        src: url('fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
         font-weight: 700
 }    
 @font-face {
         font-family: 'Hanken Grotesk';
-        src: url(fonts/static/HankenGrotesk-ExtraBold.ttf) format(truetype);
+        src: url('fonts/static/HankenGrotesk-ExtraBold.ttf') format('truetype');
         font-weight: 800
 }   
 @font-face {
         font-family: 'Hanken Grotesk';
-        src: url(fonts/static/HankenGrotesk-Meduim.ttf) format(truetype);
+        src: url('fonts/static/HankenGrotesk-Meduim.ttf') format('truetype');
         font-weight: 500
 }      
 body {   
-        font-family: 'Hanken Grotesk', sans-serif;  
-}
-/* End Global Rules */
-
-/* Start Box */
-main {        
+        font-family: 'Hanken Grotesk', sans-serif;
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center
 }
+
+/* Start Box */
 .box {
         display: flex;
-        border-radius: 30px;
+        flex-direction: column;
+        border-radius: var(--border-r);
         background-color: var(--White);
         text-transform: capitalize;
         box-shadow: 0px 8px 12px 10px var(--Pale-blue);
-        max-width: 750px
+        width: 100%;
+        max-width: 46.875rem
 }
-@media (max-width: 767px) {
-        main {
-                height: inherit
-        }
-        .box {
-                flex-direction: column
-        }
-}
-/* End Box */
 /* Start Left Box */
 .box-left {
         background-image: linear-gradient(to top,
         var(--Light-royal-blue-background),
         var(--Light-slate-blue-background) );
         padding: var(--padding-box);
-        border-radius: 30px;
+        border-radius:0%;
+        border-bottom-left-radius: var(--border-r);
+        border-bottom-right-radius: var(--border-r);
         flex-basis: 50%;
         text-align: center
 }
-@media (max-width: 767px) {
-        .box-left {
-                border-radius:0%;
-                border-bottom-left-radius: 30px;
-                border-bottom-right-radius: 30px
-        }
-}
 .box-left h1 {
-        font-size: 19px;
+        font-size: var(--heading-size);
         color: var(--Light-lavender);
         font-weight: 700
 }
@@ -110,24 +85,24 @@ main {
         var(--Persian-blue-circle),
         var(--Violet-blue-circle));
         border-radius: 50%;
-        width: 150px;
-        height: 150px;
+        width: 9.375rem;
+        height: 9.375rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 10px;
-        margin: 30px auto
+        padding: 0.625rem;
+        margin: 1.875rem auto
 }
 .box-left .score span {
         display: block;
         color: var(--White);
-        font-size: 60px;
+        font-size: 3.75rem;
         font-weight: 800;   
-        position:relative
+        position: relative
 }
 .box-left .score span::after {
         content: 'of 100';
-        font-size: 12px;
+        font-size: .75rem;
         width: 100%;
         color: var(--Light-lavender);
         position: absolute; 
@@ -136,48 +111,43 @@ main {
         transform: translateX(-50%)
 }
 .box-left .text {
-        margin: 2px auto;
+        margin: 0.125rem auto;
         width: 75%
 }
 .box-left .text span {
-        font-size: 25px;
+        font-size: 1.563rem;
         font-weight: 800;
         color: var(--White)
 }
 .box-left .text p {
         font-size: var(--size);
         color: var(--Light-lavender);
-        margin: 20px auto;
+        margin: 1.25rem auto;
         text-transform: none
 }
 /* End Left Box */
 /* Start Right Box */
 .box-right {
         background-color: var(--White);
-        border-radius: 30px;
+        border-radius: var(--border-r);;
         padding: var(--padding-box);
         flex-basis: 50%
 }
 .box-right h2 {
-        font-size: 19px;
+        font-size: var(--heading-size);
         color: var(--Dark-gray-blue);
-        margin-bottom: 30px
+        margin-block-end: 1.875rem
 }
 .box-right ul {
         list-style: none
 }
 .box-right ul li {
         border-radius: 10px;
-        padding: 15px 40px;
-        margin: 15px auto;
+        padding: 1.25rem 2.5rem;
+        margin: 0.938rem auto;
         position: relative;
         font-weight: 700;
-        font-size: 17px
-}
-@media (max-width: 767px) {
-        .box-right ul li {
-                padding: 20px 40px
-        }
+        font-size: 1.063rem
 }
 .box-right ul li img {
         position: absolute;
@@ -209,10 +179,11 @@ main {
 }
 .box-right ul li::before {
         content: attr(data-text);
+        --data-color: #43434F;
         color: var(--Light-lavender);
         position: absolute;
         right: 60px;
-        color: #43434F
+        color: var(--data-color)
 }
 .box-right ul li::after {
         content: ' / 100';
@@ -225,23 +196,22 @@ main {
         display: block;
         text-decoration: none;
         color: var(--White);
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 700;
         text-align: center;
-        padding: 15px;
-        border-radius: 30px;
+        padding: 0.938rem;
+        border-radius: var(--border-r);
         transition: .5s;
         background-color: var(--Dark-gray-blue);
-        margin-top: 35px
+        margin-block-start: 1.875rem
 }
 .box-right a:hover {
         background-color: var(--Light-royal-blue-background)
 }
-@media (max-width: 767px) {
-        .box-right a {
-                margin-top: 30px
-        }
+
+@media (min-width: 48rem) {
+        .box {flex-direction: row}
+        .box-left {border-radius: var(--border-r)}
+        .box-right ul li {padding: 0.938rem 2.5rem}
+        .box-right a {margin-block-start: 2.188rem}
 }
-
-/* End Right Box */
-
