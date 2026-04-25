@@ -44,5 +44,4 @@ This project involves creating an interactive interface with the following requi
 ## Author
 
 - Frontend Mentor - [@alaa-mekibes](https://www.frontendmentor.io/profile/alaa-mekibes)
-- linkedin - [@alaa-mekibes](https://linkedin.com/in/alaa-mekibes)
 
